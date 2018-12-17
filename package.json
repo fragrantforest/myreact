@@ -1,0 +1,11 @@
+{
+  "name": "myreact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:fragrantforest/myreact.git",
+  "author": "lpf <lpf@yfyun.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.27.1"
+  }
+}
