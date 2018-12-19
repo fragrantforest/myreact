@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/app.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.js'
+    publicPath:'/dist/',
+    filename: 'js/app.js'
   },
   module: {
     rules: [
@@ -40,18 +41,20 @@ module.exports = {
             {
               loader: 'url-loader',
               options: {
-                limit: 8192
+                limit: 8192,
+                name:'resource/[name].[ext]'
               }
             }
           ]
         },
         {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
+          test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
           use: [
             {
               loader: 'url-loader',
               options: {
-                limit: 8192
+                limit: 8192,
+                name:'resource/[name].[ext]'
               }
             }
           ]
@@ -62,6 +65,24 @@ module.exports = {
      new HtmlWebpackPlugin({
       template:'./src/index.html'
      }),
-     new ExtractTextPlugin("index.css")
-  ]
+     new ExtractTextPlugin("css/[name].css"),
+  ],
+  optimization: {
+    runtimeChunk: {
+        name: "manifest"
+    },
+    splitChunks: {
+        cacheGroups: {
+            commons: {
+                test: /[\\/]node_modules[\\/]/,
+                name: "vendor",
+                chunks: "all"
+            }
+        }
+    }
+}
+,
+   devServer: {
+     port:8574
+  },
 };
