@@ -83,6 +83,9 @@ module.exports = {
 }
 ,
    devServer: {
-     port:8574
+     port:8574,
+     historyApiFallback:{
+     	index:'/dist/index.html'
+     }
   },
 };
