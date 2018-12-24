@@ -65,6 +65,7 @@
 
 
  ReactDOM.render(
+  //  <div><i class="fa fa-address-book"></i>test</div>
    <A />
   //  <Router>
   //     <Wrapper>
