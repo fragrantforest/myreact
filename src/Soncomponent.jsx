@@ -12,9 +12,9 @@ class Soncomponent extends React.Component{
         };
     }
 
-    // componentWillMount(){
-    //     console.log('Soncomponent componentWillMount');
-    // }
+    componentWillMount(){
+        console.log('Soncomponent componentWillMount');
+    }
 
     render(){
         console.log('Soncomponent render:' + this.state.isFirstLoading);
@@ -26,9 +26,9 @@ class Soncomponent extends React.Component{
         );
     }
 
-    // componentDidMount(){
-    //     console.log('Soncomponent componentDidMount');
-    // }
+    componentDidMount(){
+        console.log('Soncomponent componentDidMount');
+    }
 
     componentWillReceiveProps(nextProps){
         console.log('Soncomponent componentWillReceiveProps:'+ this.state.isFirstLoading);
@@ -42,19 +42,19 @@ class Soncomponent extends React.Component{
         return true;
     }
 
-    // componentWillUpdate(nextProps, nextState){
-    //     console.log('Soncomponent componentWillUpdate');
-    // }
+    componentWillUpdate(nextProps, nextState){
+        console.log('Soncomponent componentWillUpdate');
+    }
 
-    // // // render()
+    // render()
 
-    // componentDidUpdate(){
-    //     console.log('Soncomponent componentDidUpdate');
-    // }
+    componentDidUpdate(){
+        console.log('Soncomponent componentDidUpdate');
+    }
 
-    // componentWillUnmount(){
-    //     console.log('Soncomponent componentWillUnmount');
-    // }
+    componentWillUnmount(){
+        console.log('Soncomponent componentWillUnmount');
+    }
 
 }
 
