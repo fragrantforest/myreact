@@ -16,12 +16,19 @@ class Soncomponent extends React.Component{
         console.log('Soncomponent componentWillMount');
     }
 
+    addCounter (){
+        this.setState({
+            count:this.state.count +1
+        })
+    }
+
     render(){
         console.log('Soncomponent render:' + this.state.isFirstLoading);
         return (
             <div>
                 {this.props.children}
                 <h1>Son count : {this.state.count}</h1>
+                <button onClick={()=>this.addCounter()}>测试点击</button>
             </div>
         );
     }

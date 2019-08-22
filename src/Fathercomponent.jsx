@@ -47,7 +47,7 @@ class Fathercomponent extends React.Component{
                 <input name="name" value={this.state.name} onChange={(e) => this.onValueChange(e)}/>
                 <Son>
                     {/* <h1>father count1 :{this.state.name}</h1> */}
-                    <h1>FFFFF</h1>
+                    {/* <h1>FFFFF</h1> */}
                     {/* <button onClick={()=>{this.onClick()}}>测试点击</button> */}
                 </Son>
            </div>

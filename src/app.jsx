@@ -1,8 +1,9 @@
  import React from 'react';
  import ReactDOM from 'react-dom';
  import Toolbar from './ContextConsumer.jsx'
- import A from './Fathercomponent.jsx'
+//  import A from './Fathercomponent.jsx'
 //  import 'font-awesome/css/font-awesome.min.css'
+ import A from './routetest.jsx'
  import './index.css';
  import './css/index.scss';
  import {BrowserRouter as Router, Route,Link,Switch,Redirect} from 'react-router-dom';
@@ -15,8 +16,8 @@
 //     return (
 //       <div>
 //         Component A
-//         <Redirect to="/c"/>
-//         {/* <Switch>
+//         {/* <Redirect to="/c"/> */}
+//         <Switch>
 //          <Route path={`${this.props.match.path}/sub`} render={()=>{
 //             return <div>当前组件是SUB</div>
 //           }}/>
@@ -26,7 +27,7 @@
 //           <Route exact path={this.props.match.path} render={()=>{
 //             return <div>当前组件是A，不带参数</div>
 //           }}/>
-//         </Switch> */}
+//         </Switch>
 //       </div>
 //     );
 //   } 

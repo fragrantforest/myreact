@@ -8,7 +8,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "ybuild": "node_modules/.bin/webpack --mode production",
-    "http": "node_modules/.bin/webpack-dev-server --mode development"
+    "http": "node_modules/.bin/webpack-dev-server --mode development -d"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
